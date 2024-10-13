@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply flex flex-col min-h-screen font-Quicksand text-sm font-normal antialiased;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+/**
+  Type: Transition
+  name: fade
+ */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-leave-form,
+.fade-enter-to {
+  opacity: 1;
+}
+
+/**
+  Type: Transition
+  name: slide
+ */
+.slide-enter-from,
+.slide-leave-to {
+  right: -9999px;
+}
+.slide-enter-to,
+.slide-leave-from {
+  right: 0;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.4s ease-in-out;
+}
