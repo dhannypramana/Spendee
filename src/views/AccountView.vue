@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {
   faArrowLeft,
-  faBars, faCalendarDays,
+  faBars, faCalendarDays, faChartSimple, faCircleQuestion, faDownload,
   faEnvelope,
   faLayerGroup,
   faPencil,
@@ -57,8 +57,9 @@ const router = useRouter()
   </section>
 
   <section class="p-7">
+    <!--<Header>-->
     <div class="flex items-center justify-between">
-      <h5 class="font-semibold">Personal Information</h5>
+      <h5 class="font-bold">Personal Information</h5>
       <RouterLink to="#" class="text-sky-600 hover:text-sky-700 transition-colors font-bold">
         <span class="text-xs">
           <FontAwesomeIcon :icon="faPencil" />
@@ -66,9 +67,11 @@ const router = useRouter()
         <span class="pl-1">Edit</span>
       </RouterLink>
     </div>
+    <!--</Header>-->
 
-    <section class="bg-sky-500 text-white rounded-lg mt-4 border-b">
-      <div class="grid grid-cols-2 overflow-hidden items-center py-2 border-b border-gray-400">
+    <section class="mt-4">
+      <!--<Full Name>-->
+      <div class="grid grid-cols-2 overflow-hidden items-center py-2 border-b border-gray-200">
         <div class="p-4 rounded flex items-center gap-2">
           <span>
             <FontAwesomeIcon :icon="faUser" />
@@ -79,8 +82,10 @@ const router = useRouter()
           <p class="font-semibold text-right">Dhanny Pramana</p>
         </div>
       </div>
+      <!--</Full Name>-->
 
-      <div class="grid grid-cols-2 overflow-hidden items-center py-2 border-b border-gray-400">
+      <!--<Email>-->
+      <div class="grid grid-cols-2 overflow-hidden items-center py-2 border-b border-gray-200">
         <div class="p-4 rounded flex items-center gap-2">
           <span>
             <FontAwesomeIcon :icon="faEnvelope" />
@@ -91,7 +96,9 @@ const router = useRouter()
           <p class="font-semibold text-right">dan@gm.com</p>
         </div>
       </div>
+      <!--</Email>-->
 
+      <!--<Birth Date>-->
       <div class="grid grid-cols-2 overflow-hidden items-center py-2">
         <div class="p-4 rounded flex items-center gap-2">
           <span>
@@ -103,8 +110,36 @@ const router = useRouter()
           <p class="font-semibold text-right">{{ moment().format('DD MMMM YYYY') }}</p>
         </div>
       </div>
+      <!--</Birth Date>-->
     </section>
+  </section>
 
+  <section class="px-7">
+    <h5 class="font-bold">Utilities</h5>
+    <button class="mt-4 p-4 w-full text-left border-b border-gray-200 hover:text-sky-500 transition-colors font-bold">
+      <span>
+        <FontAwesomeIcon :icon="faDownload" />
+      </span>
+      <span class="pl-2 font-semibold">Downloads</span>
+    </button>
+  </section>
+
+  <section class="px-7">
+    <button class="mt-4 p-4 w-full text-left border-b border-gray-200 hover:text-sky-500 transition-colors font-bold">
+      <span>
+        <FontAwesomeIcon :icon="faChartSimple" />
+      </span>
+      <span class="pl-2 font-semibold">Usage Analitycs</span>
+    </button>
+  </section>
+
+  <section class="px-7">
+    <button class="mt-4 p-4 w-full text-left border-b border-gray-200 hover:text-sky-500 transition-colors font-bold">
+      <span>
+        <FontAwesomeIcon :icon="faCircleQuestion" />
+      </span>
+      <span class="pl-2 font-semibold">Ask Help-Desk</span>
+    </button>
   </section>
   <!--</Body>-->
 
