@@ -93,7 +93,7 @@ const isSheetActive = ref<boolean>(false)
   <!-- <Body> -->
   <section
     ref="body"
-    class="-mt-3 rounded-t-xl px-5 bg-slate-50 z-10 sticky top-0 overflow-hidden max-h-[calc(100vh-100px)]"
+    class="-mt-3 rounded-t-xl px-5 bg-slate-50 z-10 sticky top-0 overflow-hidden max-h-[calc(100vh-110px)]"
   >
     <!-- <Top bar Body> -->
     <section class="sticky top-0 bg-slate-50">
