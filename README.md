@@ -1,39 +1,49 @@
-# spendee-2
+# Spendee - Money Tracker Web Application
 
-This template should help get you started developing with Vue 3 in Vite.
+Spendee is a web-based money tracking application designed to help users manage their finances effectively. This project provides an intuitive interface for users to track income, expenses, and budgets, enabling them to make informed financial decisions.
 
-## Recommended IDE Setup
+## Key Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **User Authentication**: Secure login and registration for personalized experience.
+- **Expense Tracking**: Log and categorize expenses easily to keep track of spending habits.
+- **Income Tracking**: Monitor all sources of income to maintain a clear financial overview.
+- **Budget Management**: Set and manage budgets to avoid overspending.
+- **Data Visualization**: Interactive charts and graphs to visualize spending patterns and trends.
 
-## Type Support for `.vue` Imports in TS
+## Technologies Used
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- HTML, CSS, JavaScript for front-end development.
+- PHP and MySQL for back-end services.
+- Optional: Frameworks like Bootstrap or Tailwind CSS for responsive design.
 
-## Customize configuration
+## Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+To get started with Spendee, clone the repository and follow the setup instructions.
 
-## Project Setup
+### Project Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+#### Compile and Hot-Reload for Development
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+#### Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+#### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
 ```
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests to enhance the application.
